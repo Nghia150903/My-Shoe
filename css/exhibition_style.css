@@ -1,0 +1,30 @@
+.exhibition-container {font-family: 'Segoe UI', Arial, sans-serif; max-width: 1000px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden;}
+.exhibition-banner {position: relative;}
+.exhibition-banner img {width: 100%; height: 320px; object-fit: cover; filter: brightness(0.8);}
+.exhibition-banner-text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center;}
+.exhibition-banner-text h1 {font-size: 3rem; font-weight: bold; margin-bottom: 10px; letter-spacing: 2px;}
+.exhibition-banner-text p {font-size: 1.3rem;}
+.exhibition-content {padding: 40px 32px;}
+.exhibition-content h2 {font-size: 2rem; color: #111; margin-bottom: 18px;}
+.exhibition-slider {display: flex; gap: 16px; justify-content: center; margin-bottom: 32px;}
+.exhibition-slider img {width: 180px; height: 110px; object-fit: cover; border-radius: 8px; border: 2px solid #eee; transition: box-shadow 0.2s, border 0.2s;}
+.exhibition-slider img:hover {box-shadow: 0 4px 16px rgba(52,152,219,0.18); border-color: #e74c3c;}
+.exhibition-events {display: flex; gap: 32px; justify-content: center; margin-bottom: 32px;}
+.event {background: #f7f7f7; border-radius: 12px; padding: 24px 20px; flex: 1; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.2s; position: relative;}
+.event:hover {transform: translateY(-6px) scale(1.03); box-shadow: 0 6px 24px rgba(52,152,219,0.12);}
+.event img {width: 100%; max-width: 180px; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 12px;}
+.event h3 {font-size: 1.2rem; margin-bottom: 8px; color: #222;}
+.event p {color: #555; font-size: 1rem;}
+.event-date {display: block; margin-top: 8px; color: #e74c3c; font-weight: bold;}
+.event-date i {margin-right: 4px;}
+.exhibition-timeline {margin-bottom: 32px;}
+.exhibition-timeline h3 {margin-bottom: 10px; color: #222;}
+.exhibition-timeline table {width: 100%; border-collapse: collapse; background: #fafafa; border-radius: 8px; overflow: hidden;}
+.exhibition-timeline th, .exhibition-timeline td {padding: 10px 8px; border-bottom: 1px solid #eee; text-align: center;}
+.exhibition-timeline th {background: #e74c3c; color: #fff;}
+.exhibition-timeline tr:last-child td {border-bottom: none;}
+.exhibition-video {margin-bottom: 16px;}
+.exhibition-video-list {display: flex; gap: 16px; justify-content: center; margin-top: 10px;}
+.exhibition-video-list img {width: 180px; height: 110px; object-fit: cover; border-radius: 8px; border: 2px solid #eee; transition: box-shadow 0.2s, border 0.2s;}
+.exhibition-video-list img:hover {box-shadow: 0 4px 16px rgba(52,152,219,0.18); border-color: #e74c3c;}
+@media (max-width: 900px) {.exhibition-events, .exhibition-slider, .exhibition-video-list {flex-direction: column; gap: 12px;} .exhibition-content {padding: 20px 8px;} .exhibition-banner img {height: 180px;} .exhibition-banner-text h1 {font-size: 2rem;}} 
